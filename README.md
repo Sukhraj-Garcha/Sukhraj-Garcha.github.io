@@ -6,5 +6,7 @@ This is a work in progress and is not fully completed yet.
 Things to finish: 
   - add working links to all projects 
   - add media queries to make the website more responsive to different sizes 
+
+url: https://sukhraj-garcha.github.io/
   
 
