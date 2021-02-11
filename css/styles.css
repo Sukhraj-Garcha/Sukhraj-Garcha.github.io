@@ -1,0 +1,319 @@
+/*global styles*/ 
+body { 
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+ }
+
+ p {
+	margin-bottom: 30px;
+ }
+
+ h1 {
+ 	font-size: 50px;
+ 	font-family: serif;
+ }
+
+ h2 {
+ 	font-size: 35px;
+ 	font-family: serif;
+ 	margin: 0;
+ }
+
+ h3 {
+ 	font-family: serif;
+ }
+
+header, .bio, .projects, .experience {
+	border-bottom: 0.2rem solid cyan;
+}
+
+.contentWrap {
+	max-width: 800px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+/*header*/ 
+header { 
+	background: black;
+	padding: 13%;
+	text-align: center;
+	perspective: 800px;
+ }
+
+span { 
+   display:inline-block;
+   margin-left: -15px;
+   color:#77c6bc;
+   transform-origin: 50% 70%;
+ }
+
+ span:nth-child(2n) {
+  color: beige;
+}
+
+/*animation settings for each letter*/
+span:nth-child(1) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both;
+}
+
+span:nth-child(2) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.2s both;
+}
+
+span:nth-child(3) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.4s both;
+}
+
+span:nth-child(3) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.6s both;
+}
+
+span:nth-child(4) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 0.8s both;
+}
+
+span:nth-child(5) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1s both;
+}
+
+span:nth-child(6) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.2s both;
+}
+
+span:nth-child(7) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.4s both;
+}
+
+span:nth-child(8) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.6s both;
+}
+
+span:nth-child(9) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 1.8s both;
+}
+
+span:nth-child(10) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2s both;
+}
+
+span:nth-child(11) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.2s both;
+}
+
+span:nth-child(12) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.4s both;
+}
+
+span:nth-child(13) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.6s both;
+}
+
+span:nth-child(14) { 
+	animation: flipUp 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) 2.8s both;
+}
+
+.title {
+ 	color: cyan;
+	font-size: 100px;
+	margin-bottom: 100px;
+ }
+
+.space {
+	margin-right: 3%;
+}
+
+
+.resume {		
+	background: black;
+	padding: 10px 25px;
+	color: white;
+	border: solid cyan;
+	font-size: medium;
+	text-decoration: none;
+	transition: 0.5s;
+
+	animation: fadeIn 2s ease-out 3s both;
+}
+
+.resume:hover {
+	border-radius: 15px;
+ 	background: cyan;
+ 	color: black;
+}
+
+/*bio*/ 
+.bio { 
+	background-image: url(../images/bio_background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.bio p {
+	font-size: 25px;
+}
+
+.bio img {
+	width: 70%;
+	margin-top: 25%;
+}
+
+.bio h2, .bio h3 {
+	color: springgreen;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /*define 3 columns*/
+	grid-column-gap: 10%; 
+}
+
+.gridContainer h3 {
+	margin-bottom: 0;
+	margin-top: 30%
+}
+
+
+.infoList {
+	list-style: none;
+	padding-left: 0;
+}
+
+.otherList {
+	padding-left: 8%;
+	list-style: decimal;
+}
+
+
+/*projects*/
+.projects {
+	background: #2a2929;
+}
+
+.projects h2 {
+	color: cyan;
+}
+
+.projects h3 {
+	color: cyan;
+	margin-top: 0;
+	margin-top: 100px;
+}
+
+.projectItem {
+	overflow: hidden;
+}
+
+.projectItem img {
+	width: 300px;
+	float: left;
+	margin-right: 50px;
+	margin-top: 100px;
+}
+
+
+/* ****add the correct links to git hub**** */
+.projectBtn {
+	background: #2a2929;
+	color: white;
+	text-decoration: none;
+	border: solid cyan;
+	padding: 5px 10px;
+	transition: 0.5s;
+}
+
+.projectBtn:hover {
+	border-radius: 15px;
+ 	background: cyan;
+ 	color: black;
+}
+
+
+/*experience*/
+.experience {
+	background-image: url(../images/experience.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: springgreen;
+}
+
+.experience h2 {
+	color: white;
+}
+
+.flexGrid {
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.progLanguage {
+	font-size: xx-large;
+	background: #2a2929;
+	opacity: 30%;
+	transition: 0.5s;
+	text-align: center;
+	padding: 90px 40px;
+	margin-top: 100px;
+	margin-right: 50px;
+	border-radius: 15px;
+	flex: 1 0 90px;
+}
+
+.progLanguage:hover {
+	border: solid cyan;
+	background: linear-gradient(180deg, rgba(27,31,217,1) 1%, rgba(7,168,223,1) 58%, rgba(13,196,172,1) 90%);
+	opacity: 70%;
+}
+
+.group1 {
+	border: solid green;
+}
+
+.group2 {
+	border: solid orange;
+}
+
+.group3 {
+	border: solid red;
+}
+
+/*contact*/
+.contact {
+	background: #1f1f1f;
+	text-align: center;
+}
+
+.contactList {
+	list-style-type: none;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.contactList a {
+	padding: 20px;
+	display: inline-block;
+	color: yellow;
+	text-decoration: none;
+}
+
+.contactList a:hover {
+	color: white;
+}
+
+/*keyframe animations*/ 
+@keyframes flipUp { 
+	from {transform: rotateX(90deg);}
+	to {transform: rotateX(0deg);}
+
+}
+
+@keyframes fadeIn { 
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/*responsive*/ 
